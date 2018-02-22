@@ -92,8 +92,8 @@ extension ViewController: UIPickerViewDelegate {
                 label.text = data1[row].left
             } else {
                 label.textAlignment = .left
-                label.textColor = UIColor.blue
-                label.font = UIFont.italicSystemFont(ofSize: 18)
+                label.textColor = .blue
+                label.font = .italicSystemFont(ofSize: 18)
                 label.text = data1[row].right
             }
         } else {
