@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqu-pm-dMR">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqu-pm-dMR">
                                 <rect key="frame" x="80" y="346" width="215" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="N7p-68-B1k"/>

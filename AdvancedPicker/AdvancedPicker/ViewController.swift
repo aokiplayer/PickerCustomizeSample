@@ -57,7 +57,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        if pickerView.tag == 0 {
+        if pickerView == picker1 {
             return 2
         } else {
             return 1
@@ -65,7 +65,7 @@ extension ViewController: UIPickerViewDataSource {
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView.tag == 0 {
+        if pickerView == picker1 {
             return data1.count
         } else {
             return data2.count
@@ -82,7 +82,7 @@ extension ViewController: UIPickerViewDelegate {
 
         let label = UILabel()
 
-        if pickerView.tag == 0 {
+        if pickerView == picker1 {
             label.frame = CGRect(x: 0, y: 0, width: pickerView.frame.width / 2, height: 0)
 
             if component == 0 {
@@ -110,7 +110,7 @@ extension ViewController: UIPickerViewDelegate {
 
     // This method returns height of picker view
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        if pickerView.tag == 0 {
+        if pickerView == picker1 {
             return 50
         } else {
             return 20
